@@ -1,0 +1,115 @@
+:root {
+    /* colors  */
+    --color-slate-900: rgb(31, 49, 79);
+    --color-slate-500: rgb(104, 119, 141);
+    --color-slate-300: rgb(213, 225, 239);
+    --color-white-absolute: rgb(255, 255, 255);
+    /* sizing and spacing  */
+    --size-15: 1.5rem;
+    --size-16: 1.6rem;
+    --size-22: 2.2rem; 
+    --size-24: 2.4rem;
+    /* letter spacing */
+    --tracking-normal: 0;   
+    --tracking-tight: 0.2;
+    /* line heighth */
+    --leading-2: 2.4rem;     
+    --leading-3: 3.52rem;
+    /* font weight  */
+    --font-thin: 100;
+    --font-extralight: 200;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+    /* border radius  */
+    --rounded-10: 1rem;
+    --rounded-20: 2rem;
+    /* padding  */
+    --p-16: 1.6rem;
+    --pb-40: 4rem;
+    /* margin  */
+    --m-24: 2.4rem;
+    --m-16: 1.6rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* , *::after , *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Outfit';
+    font-weight: 500;
+    min-height: 100vh; 
+    background-color: var(--color-slate-300);
+}
+
+/* Text Presets  */
+.text-preset-1 {
+    font-size: var(--size-22);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: var(--tracking-normal);
+    line-height: var(--leading-3);
+    text-align: center;
+    color: var(--color-slate-900);
+}
+.text-preset-2 {
+    font-size: var(--size-15);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: var(--tracking-tight);
+    line-height: var(--leading-2);
+    text-align: center;
+    color: var(--color-slate-500);
+}
+/* align preset  */
+.both-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* main box preset  */
+.main-box {
+    width: 32rem;
+    height: auto;
+    background-color: var(--color-white-absolute);
+    border-radius: var(--rounded-20);
+    padding: var(--p-16);
+    padding-bottom: var(--pb-40);
+}
+.qr-code {
+    border-radius: var(--rounded-10);
+    overflow: hidden;
+}
+.qr-code img {
+    width: 28.8rem;
+    height: 28.8rem;
+    display: block;
+}
+
+/* utilites  */
+.mt-24 {
+    margin-top: 2.4rem;
+}
+.mt-16 {
+    margin-top: 1.6rem;
+}
+.px-16 {
+    padding: 0 1.6rem;
+}
